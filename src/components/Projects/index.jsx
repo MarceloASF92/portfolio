@@ -24,7 +24,7 @@ const Projects = () => {
   const [reactProjects] = useState([
     {
       id: uuid(),
-      url: "https://bico.vercel.app/",
+      url: "https://portfolio-marcelo-alves.vercel.app/",
       name: "Portfolio",
       img: portfolio,
     },
@@ -51,9 +51,27 @@ const Projects = () => {
   const [jsProjects] = useState([
     {
       id: uuid(),
+      url: "https://kenzie-academy-brasil-developers.github.io/m1-entrega-s4-ecommerce-parte-dois-marceloasf92/",
+      name: "Ecommerce",
+      img: ecommerce,
+    },
+    {
+      id: uuid(),
       url: "https://kenzie-academy-brasil-developers.github.io/api-kenziefood-m2-marceloasf92/",
       name: "Kenzie Food",
       img: kenzieFood,
+    },
+    {
+      id: uuid(),
+      url: "https://kenzie-academy-brasil-developers.github.io/m1-entrega-s4-entrega-construa-um-jogo-de-azar-rachbraga/",
+      name: "Jogos de Azar",
+      img: azar,
+    },
+    {
+      id: uuid(),
+      url: "https://kenzie-academy-brasil-developers.github.io/m2-entrega-torre-de-hanoi-sprint-1a-marceloasf92/",
+      name: "Torre de Hanoi",
+      img: hanoi,
     },
     {
       id: uuid(),
@@ -66,24 +84,6 @@ const Projects = () => {
       url: "https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-continuaccao-m2-sprint-1b-marceloasf92/",
       name: "Lista de Produtos",
       img: listaProdutos,
-    },
-    {
-      id: uuid(),
-      url: "https://kenzie-academy-brasil-developers.github.io/m2-entrega-torre-de-hanoi-sprint-1a-marceloasf92/",
-      name: "Torre de Hanoi",
-      img: hanoi,
-    },
-    {
-      id: uuid(),
-      url: "https://kenzie-academy-brasil-developers.github.io/m1-entrega-s4-entrega-construa-um-jogo-de-azar-rachbraga/",
-      name: "Jogos de Azar",
-      img: azar,
-    },
-    {
-      id: uuid(),
-      url: "https://kenzie-academy-brasil-developers.github.io/m1-entrega-s4-ecommerce-parte-dois-marceloasf92/",
-      name: "Ecommerce",
-      img: ecommerce,
     },
   ]);
 

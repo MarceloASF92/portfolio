@@ -110,6 +110,14 @@ export const Content = styled.div`
 
     .btn-active:first-child {
       background-color: aliceblue;
+
+      &:hover {
+        background-color: #c0c6cc;
+      }
+
+      &:focus {
+        background-color: #c0c6cc;
+      }
     }
 
     .btn-active:last-child {

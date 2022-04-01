@@ -26,8 +26,39 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 1rem;
-  margin-top: 50px;
+
+  .more-information {
+    min-width: 300px;
+    max-width: 400px;
+    width: 90%;
+    font-size: calc(8px + 1.5vmin);
+    text-align: justify;
+    padding: 1rem 0;
+    color: aliceblue;
+    margin-top: 30px;
+    line-height: 30px;
+    animation: ${scaleAnimation} 5s forwards;
+
+    button {
+      background-color: transparent;
+      color: aliceblue;
+      border: none;
+      margin: 0 8px;
+      cursor: pointer;
+      transition: 0.6s;
+
+      &:hover {
+        color: #a7aad4;
+      }
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
 
   form {
     display: flex;
@@ -64,6 +95,10 @@ export const Content = styled.div`
       transition: 0.2s;
       font-size: calc(8px + 1.5vmin);
       background-color: #a7aad4;
+
+      &:hover {
+        background-color: #2d307a;
+      }
 
       &:focus {
         background-color: #2d3059;

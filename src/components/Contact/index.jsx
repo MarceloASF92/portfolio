@@ -7,9 +7,14 @@ import { useForm } from "react-hook-form";
 import Button from "../Button";
 import { TextField } from "@mui/material";
 import { Container, Content } from "./styles";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export const ContactUs = () => {
   const form = useRef();
+
+  const openInNewTab = (url) => {
+    window.open(url, "_blank")?.focus();
+  };
 
   const schema = yup.object().shape({
     name: yup.string().required("Nome obrigatório"),
@@ -65,6 +70,18 @@ export const ContactUs = () => {
   return (
     <Container>
       <Content>
+        <p className="more-information">
+          Caso você queira contratar os meus serviços, favor entrar em contato
+          pelo Linkedin
+          <Button
+            onClick={() =>
+              openInNewTab("https://www.linkedin.com/in/marcelo-asf/")
+            }
+          >
+            <AiFillLinkedin size={20} />
+          </Button>
+          ou preencher o formulário abaixo.
+        </p>
         <form ref={form} onSubmit={handleSubmit(checkFields)}>
           <h2>FORMULÁRIO</h2>
           <TextField
