@@ -84,7 +84,10 @@ const Home = () => {
           >
             Contrate-me
           </Button>
-          <a href="Profile.pdf" download="Profile.pdf">
+          <a
+            href="Resumo_Marcelo_Alves.pdf"
+            download="Resumo_Marcelo_Alves.pdf"
+          >
             <Button className="btn-active">Currículo</Button>
           </a>
         </div>
